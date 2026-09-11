@@ -44,6 +44,6 @@ deadbeef_SOURCES =\
 
 deadbeef_LDADD = $(LDADD) $(ICONV_LIB) $(DL_LIBS) -lm -lpthread $(DISPATCH_LIBS) $(LTLIBINTL) ../shared/libctmap.la ../shared/undo/libundo.la ../shared/filereader/libfilereader.la ../shared/libparser.la ../shared/scriptable/libscriptable.la ../shared/libgrowablebuffer.la ../shared/libpluginsettings.la
 
-deadbeef_CFLAGS = $(DEPS_CFLAGS) $(DISPATCH_CFLAGS) -std=c99 -DLOCALEDIR=\"@localedir@\" -I@top_srcdir@/include -I@top_srcdir@/shared -I@top_srcdir@
+deadbeef_CFLAGS = $(DEPS_CFLAGS) $(DISPATCH_CFLAGS) -std=c11 -DLOCALEDIR=\"@localedir@\" -I@top_srcdir@/include -I@top_srcdir@/shared -I@top_srcdir@
 
 EXTRA_DIST = sj_to_unicode.h 

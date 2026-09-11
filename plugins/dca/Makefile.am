@@ -26,6 +26,6 @@ dca_la_LDFLAGS = -module -avoid-version
 dca_la_LIBADD = $(LDADD) -lm
 
 dcapath=@top_srcdir@/plugins/dca
-dca_la_CFLAGS = $(CFLAGS) -fPIC -std=c99 -I@top_srcdir@/include -I$(dcapath)/libdca
+dca_la_CFLAGS = $(CFLAGS) -fPIC -std=c11 -I@top_srcdir@/include -I$(dcapath)/libdca
 
 endif

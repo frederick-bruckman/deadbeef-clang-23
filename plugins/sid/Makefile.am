@@ -105,7 +105,7 @@ sid_la_SOURCES = plugin.c csid.cpp csid.h\
 	
 sid_la_LDFLAGS = -module -avoid-version -lm $(NOCPPLIB)
 
-sid_la_CFLAGS = $(CFLAGS) -std=c99 -I$(sidpath)/libsidplay/include -I$(sidpath)/builders/resid-builder/include -fPIC -I@top_srcdir@/include
+sid_la_CFLAGS = $(CFLAGS) -std=c11 -I$(sidpath)/libsidplay/include -I$(sidpath)/builders/resid-builder/include -fPIC -I@top_srcdir@/include
 sid_la_CXXFLAGS = $(CXXFLAGS) -std=c++11 -DHAVE_UNIX -I$(sidpath) -I$(sidpath)/unix -I$(sidpath)/libsidplay -I$(sidpath)/libsidplay/include -I$(sidpath)/libsidplay/include/sidplay -I$(sidpath)/libsidutils/include/sidplay/utils -I$(sidpath)/builders/resid-builder/include/sidplay/builders -I$(sidpath)/builders/resid-builder/include -I@top_srcdir@/include -DHAVE_STRCASECMP -DHAVE_STRNCASECMP -fno-exceptions -fno-rtti -fno-unwind-tables
 
 endif
