@@ -12,5 +12,5 @@ vtx_la_SOURCES =\
 vtx_la_LDFLAGS = -module -avoid-version
 
 vtxpath=@top_srcdir@/plugins/vtx
-vtx_la_CFLAGS = $(CFLAGS) -std=c11 -I@top_srcdir@/include -I$(vtxpath)/libayemu
+vtx_la_CFLAGS = $(CFLAGS) -std=c99 -I@top_srcdir@/include -I$(vtxpath)/libayemu
 endif

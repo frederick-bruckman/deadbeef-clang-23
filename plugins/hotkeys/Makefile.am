@@ -6,5 +6,5 @@ hotkeys_la_LDFLAGS = -module -avoid-version
 EXTRA_hotkeys_la_SOURCES = keysyms.inc
 
 hotkeys_la_LIBADD = $(LDADD) $(HOTKEYS_LIBS) ../../shared/libparser.la
-hotkeys_la_CFLAGS = $(CFLAGS) $(HOTKEYS_CFLAGS) -std=c11 -I@top_srcdir@/include
+hotkeys_la_CFLAGS = $(CFLAGS) $(HOTKEYS_CFLAGS) -std=c99 -I@top_srcdir@/include
 endif

@@ -26,5 +26,5 @@ endif
 
 ffap_la_LDFLAGS = -module -avoid-version -lm
 
-ffap_la_CFLAGS = $(CFLAGS) -fPIC -std=c11 -I@top_srcdir@/include
+ffap_la_CFLAGS = $(CFLAGS) -fPIC -std=c99 -I@top_srcdir@/include
 endif

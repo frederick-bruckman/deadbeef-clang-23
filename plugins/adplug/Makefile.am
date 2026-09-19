@@ -3,7 +3,7 @@ adplugpath=@top_srcdir@/plugins/adplug
 
 pkglib_LTLIBRARIES = adplug.la
 
-adplug_la_CFLAGS = $(CFLAGS) -std=c11 -I$(adplugpath)/adplug -I$(adplugpath)/libbinio -I@top_srcdir@/include -fPIC
+adplug_la_CFLAGS = $(CFLAGS) -std=c99 -I$(adplugpath)/adplug -I$(adplugpath)/libbinio -I@top_srcdir@/include -fPIC
 adplug_la_LDFLAGS = -module -avoid-version $(NOCPPLIB) -lm
 adplug_la_CXXFLAGS = $(CXXFLAGS) -std=c++11 -Dstricmp=strcasecmp -DVERSION=\"trunk_a6706ba\" -I$(adplugpath)/adplug -I$(adplugpath)/libbinio -I@top_srcdir@/include
 

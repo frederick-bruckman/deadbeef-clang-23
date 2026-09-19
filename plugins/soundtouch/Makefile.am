@@ -3,7 +3,7 @@ soundtouchpath=@top_srcdir@/plugins/soundtouch/soundtouch
 
 pkglib_LTLIBRARIES = ddb_soundtouch.la
 
-ddb_soundtouch_la_CFLAGS = $(CFLAGS) -std=c11 -I$(soundtouchpath)/include -I$(soundtouchpath)/source/soundtouch -I@top_srcdir@/include -fPIC
+ddb_soundtouch_la_CFLAGS = $(CFLAGS) -std=c99 -I$(soundtouchpath)/include -I$(soundtouchpath)/source/soundtouch -I@top_srcdir@/include -fPIC
 ddb_soundtouch_la_LDFLAGS = -module -avoid-version $(NOCPPLIB) -lm
 
 ddb_soundtouch_la_CXXFLAGS = $(CXXFLAGS) -I$(soundtouchpath)/include -I$(soundtouchpath)/source/soundtouch -I@top_srcdir@/include

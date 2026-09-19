@@ -87,7 +87,7 @@ VPATH=src \
 	Tests
 
 $(BUILD)/%.o: %.c
-	$(CC) -std=c11 $(CFLAGS) -c $< -o $@
+	$(CC) -std=c99 $(CFLAGS) -c $< -o $@
 
 $(BUILD)/%.o: %.cpp
 	$(CXX) -std=c++14 $(CFLAGS) -c $< -o $@
